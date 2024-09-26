@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "lint": "eslint src *.ts && tsc",
-    "lint:fix": "eslint src *.ts --fix && tsc",
+    "lint:fix": "eslint src *.ts --fix && tsc"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.1",

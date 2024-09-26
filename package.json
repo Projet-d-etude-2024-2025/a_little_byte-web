@@ -1,0 +1,21 @@
+{
+  "name": "a_little_byte-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm -r --parallel run dev",
+    "format": "prettier -c {apps,packages}/**/*.{ts,tsx}",
+    "format:fix": "prettier -w {apps,packages}/**/*.{ts,tsx}",
+    "lint": "pnpm -r --parallel run lint",
+    "lint:fix": "pnpm -r --parallel run lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
+}

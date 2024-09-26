@@ -1,12 +1,13 @@
 {
-  "name": "@alittlebyte/common",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "@alittlebyte/common",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint src *.ts && tsc",
+		"lint:fix": "eslint src *.ts --fix && tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

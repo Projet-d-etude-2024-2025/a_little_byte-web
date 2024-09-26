@@ -189,7 +189,29 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(typescript@5.6.2)(vite@5.4.8(@types/node@20.16.9))
 
-  packages/common: {}
+  packages/common:
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.11.1
+        version: 9.11.1
+      '@types/node':
+        specifier: ^20.11.17
+        version: 20.16.9
+      eslint:
+        specifier: ^9.11.1
+        version: 9.11.1(jiti@1.21.6)
+      globals:
+        specifier: ^15.9.0
+        version: 15.9.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.19.1
+      typescript:
+        specifier: ^5.5.3
+        version: 5.6.2
+      typescript-eslint:
+        specifier: ^8.7.0
+        version: 8.7.0(eslint@9.11.1(jiti@1.21.6))(typescript@5.6.2)
 
   packages/components:
     dependencies:
@@ -252,17 +274,41 @@ importers:
         version: 2.5.2
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7
+        version: 1.0.7(tailwindcss@3.4.13)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
+      '@eslint/js':
+        specifier: ^9.11.1
+        version: 9.11.1
+      '@types/node':
+        specifier: ^20.11.17
+        version: 20.16.9
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.9
+      eslint:
+        specifier: ^9.11.1
+        version: 9.11.1(jiti@1.21.6)
+      globals:
+        specifier: ^15.9.0
+        version: 15.9.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
+      tailwindcss:
+        specifier: ^3.4.13
+        version: 3.4.13
+      tsx:
+        specifier: ^4.7.1
+        version: 4.19.1
+      typescript:
+        specifier: ^5.5.3
+        version: 5.6.2
+      typescript-eslint:
+        specifier: ^8.7.0
+        version: 8.7.0(eslint@9.11.1(jiti@1.21.6))(typescript@5.6.2)
 
 packages:
 
@@ -5389,7 +5435,9 @@ snapshots:
 
   tailwind-merge@2.5.2: {}
 
-  tailwindcss-animate@1.0.7: {}
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.13):
+    dependencies:
+      tailwindcss: 3.4.13
 
   tailwindcss@3.4.13:
     dependencies:

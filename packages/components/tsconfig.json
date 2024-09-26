@@ -1,0 +1,6 @@
+{
+  "exclude": ["node_modules"],
+  "include": ["**/*.tsx", "**/*.ts" ],
+  "extends": ["../../tsconfig.json"],
+  "compilerOptions": {},
+}

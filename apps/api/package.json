@@ -1,7 +1,8 @@
 {
 	"name": "@alittlebyte/api",
 	"scripts": {
-		"dev": "tsx watch src/index.ts && email dev",
+		"dev": "tsx watch src/index.ts",
+		"dev:email": "email dev",
 		"lint": "eslint src/** && tsc",
 		"lint:fix": "eslint src/** --fix && tsc"
 	},

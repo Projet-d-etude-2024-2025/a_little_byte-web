@@ -1,21 +1,21 @@
 {
-  "name": "@alittlebyte/api",
-  "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "lint": "eslint src *.ts && tsc",
-    "lint:fix": "eslint src *.ts --fix && tsc"
-  },
-  "dependencies": {
-    "@hono/node-server": "^1.13.1",
-    "hono": "^4.6.3"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.11.1",
-    "@types/node": "^20.11.17",
-    "eslint": "^9.11.1",
-    "globals": "^15.9.0",
-    "tsx": "^4.7.1",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.7.0"
-  }
+	"name": "@alittlebyte/api",
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"lint": "eslint src/** && tsc",
+		"lint:fix": "eslint src/** --fix && tsc"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.13.1",
+		"hono": "^4.6.3"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.11.1",
+		"@types/node": "^20.11.17",
+		"eslint": "^9.11.1",
+		"globals": "^15.9.0",
+		"tsx": "^4.7.1",
+		"typescript": "^5.5.3",
+		"typescript-eslint": "^8.7.0"
+	}
 }

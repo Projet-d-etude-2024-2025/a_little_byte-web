@@ -5,7 +5,7 @@ on:
       - closed
 jobs:
   cleanup:
-    runs-on: ["self-hosted", "deploy"]
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - name: Install gh
@@ -40,4 +40,4 @@ jobs:
               gh actions-cache delete $cacheKey -R $REPO -B $BRANCH --confirm
           done
 
-          echo "Done" 
+          echo "Done"

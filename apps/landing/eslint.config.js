@@ -11,4 +11,15 @@ export default [
 	...tseslint.configs.recommended,
 	pluginReact.configs.flat.recommended,
 	...pluginQuery.configs["flat/recommended"],
+	pluginReact.configs.flat["jsx-runtime"],
+	{
+		settings: {
+			react: {
+				version: "detect",
+			},
+		},
+		rules: {
+			"react/prop-types": 0,
+		},
+	},
 ]

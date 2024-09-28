@@ -21,3 +21,16 @@ model User {
 
   @@unique([firstName, lastName, email])
 }
+
+model Service {
+  id                         String   @id @default(uuid())
+  name                       String
+  descriptionKey             String
+  technicalSpecificationsKey String
+  price                      Float
+  perUser                    Boolean
+  perDevice                  Boolean
+  available                  Boolean
+  createdAt                  DateTime @default(now())
+  updatedAt                  DateTime @updatedAt
+}
